@@ -66,6 +66,16 @@ SELECT
 FROM usuario;
 select*from usuario where  Id_u=2 or  Id_u=4 or  Id_u=6 or  Id_u=8 or  Id_u=10 or  Id_u=12
  select count(*) from usuario where  Id_u % 2 = 0;
+ select count(*) from sede where  ID_S % 2 = 0;
+  select count(*) from cita where  idcita % 2 = 0;
+   select count(*) from agenda where  Id_agenda % 2 = 0;
+
+
+select * from sede where Id_u<=5;
+select * from cita where Id_u<=5;
+select * from agenda where Id_u<=5;
+
+
 
 
 

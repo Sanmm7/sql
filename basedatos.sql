@@ -65,7 +65,8 @@ SELECT
     tipo_usuario
 FROM usuario;
 select*from usuario where  Id_u=2 or  Id_u=4 or  Id_u=6 or  Id_u=8 or  Id_u=10 or  Id_u=12
- 
+ select count(*) from usuario where  Id_u % 2 = 0;
+
 
 
 

@@ -74,7 +74,8 @@ select*from usuario where  Id_u=2 or  Id_u=4 or  Id_u=6 or  Id_u=8 or  Id_u=10 o
 select * from sede where Id_u<=5;
 select * from cita where Id_u<=5;
 select * from agenda where Id_u<=5;
-
+SELECT cita.hora,cita.fecha,usuario.Nombre,usuario.Apellidos,agenda.H_inicio,agenda.H_final,agenda.f_inicio,agenda.f_final,agenda.n_identificacion from usuario INNER JOIN cita ON usuario.n_identificacion = cita.n_identificacion inner join agenda  on  agenda.Id_agenda = cita.Id_agenda 
+where agenda.n_identificacion=numi and estado='Activa'and citapac='tomada' ;
 
 
 
